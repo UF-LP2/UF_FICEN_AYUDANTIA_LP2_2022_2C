@@ -1,0 +1,17 @@
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\bin\Debug\net6.0-windows\PercolationRecursivo.exe
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\bin\Debug\net6.0-windows\PercolationRecursivo.deps.json
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\bin\Debug\net6.0-windows\PercolationRecursivo.runtimeconfig.json
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\bin\Debug\net6.0-windows\PercolationRecursivo.dll
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\bin\Debug\net6.0-windows\PercolationRecursivo.pdb
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.csproj.AssemblyReference.cache
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.Form1.resources
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.csproj.GenerateResource.cache
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.AssemblyInfoInputs.cache
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.AssemblyInfo.cs
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.csproj.CoreCompileInputs.cache
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.dll
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\refint\PercolationRecursivo.dll
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.pdb
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\PercolationRecursivo.genruntimeconfig.cache
+C:\Users\Francisco\Documents\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PercolationRecursivo\PercolationRecursivo\obj\Debug\net6.0-windows\ref\PercolationRecursivo.dll
