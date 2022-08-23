@@ -106,7 +106,7 @@
             this.NUDTam.Dock = System.Windows.Forms.DockStyle.Top;
             this.NUDTam.Location = new System.Drawing.Point(0, 75);
             this.NUDTam.Maximum = new decimal(new int[] {
-            50,
+            30,
             0,
             0,
             0});
