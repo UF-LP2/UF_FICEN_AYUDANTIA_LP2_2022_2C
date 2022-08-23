@@ -18,5 +18,12 @@ namespace Demo_Form {
             
             base.Dispose(disposing);
         }
+
+        private System.Windows.Forms.StatusStrip sttsBar;
+        private System.Windows.Forms.ToolStripStatusLabel lblPath;
+        private System.Windows.Forms.ToolStrip stripMenu;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton btnSaveCSV;
+        private System.Windows.Forms.DataGridView gridCSV;
     }
 }

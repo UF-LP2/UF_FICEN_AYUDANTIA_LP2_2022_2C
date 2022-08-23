@@ -1,11 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
-//using static Demo_Form.data_csv;
 
 namespace Demo_Form {
     public partial class mainForm : Form {
-        private data_csv csvFRM = null;
         private FileStream _file = null;
         public mainForm() {
             InitializeComponent();
@@ -30,10 +28,17 @@ namespace Demo_Form {
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.ofdCSV = new System.Windows.Forms.OpenFileDialog();
-            this.btnODFcsv = new System.Windows.Forms.Button();
-            this.lblFilePath = new System.Windows.Forms.Label();
-            this.btnAbrir = new System.Windows.Forms.Button();
+            this.sttsBar = new System.Windows.Forms.StatusStrip();
+            this.lblPath = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stripMenu = new System.Windows.Forms.ToolStrip();
+            this.btnSaveCSV = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.gridCSV = new System.Windows.Forms.DataGridView();
+            this.sttsBar.SuspendLayout();
+            this.stripMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCSV)).BeginInit();
             this.SuspendLayout();
             // 
             // ofdCSV
@@ -41,68 +46,90 @@ namespace Demo_Form {
             this.ofdCSV.FileName = "ofdCSV";
             this.ofdCSV.Filter = "\"csv files (*.csv)|*.csv|All files (*.*)|*.*\"";
             // 
-            // btnODFcsv
+            // sttsBar
             // 
-            this.btnODFcsv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnODFcsv.Location = new System.Drawing.Point(147, 12);
-            this.btnODFcsv.Name = "btnODFcsv";
-            this.btnODFcsv.Size = new System.Drawing.Size(195, 43);
-            this.btnODFcsv.TabIndex = 0;
-            this.btnODFcsv.Text = "Abrir CSV";
-            this.btnODFcsv.UseVisualStyleBackColor = true;
-            this.btnODFcsv.Click += new System.EventHandler(this.btnODFcsv_Click);
+            this.sttsBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lblPath});
+            this.sttsBar.Location = new System.Drawing.Point(0, 592);
+            this.sttsBar.Name = "sttsBar";
+            this.sttsBar.Size = new System.Drawing.Size(868, 22);
+            this.sttsBar.TabIndex = 0;
+            this.sttsBar.Text = "statusStrip1";
             // 
-            // lblFilePath
+            // lblPath
             // 
-            this.lblFilePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFilePath.Location = new System.Drawing.Point(12, 74);
-            this.lblFilePath.Name = "lblFilePath";
-            this.lblFilePath.Size = new System.Drawing.Size(477, 144);
-            this.lblFilePath.TabIndex = 1;
-            this.lblFilePath.Text = "Path Archivo: ...";
+            this.lblPath.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPath.Name = "lblPath";
+            this.lblPath.Size = new System.Drawing.Size(57, 17);
+            this.lblPath.Text = "Path: . . .";
             // 
-            // btnAbrir
+            // stripMenu
             // 
-            this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbrir.Location = new System.Drawing.Point(367, 165);
-            this.btnAbrir.Name = "btnAbrir";
-            this.btnAbrir.Size = new System.Drawing.Size(122, 53);
-            this.btnAbrir.TabIndex = 0;
-            this.btnAbrir.Text = "Abrir";
-            this.btnAbrir.Click += new System.EventHandler(this.btnAbrir_Click_1);
+            this.stripMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton2,
+            this.btnSaveCSV});
+            this.stripMenu.Location = new System.Drawing.Point(0, 0);
+            this.stripMenu.Name = "stripMenu";
+            this.stripMenu.Size = new System.Drawing.Size(868, 25);
+            this.stripMenu.TabIndex = 1;
+            this.stripMenu.Text = "toolStrip1";
+            // 
+            // btnSaveCSV
+            // 
+            this.btnSaveCSV.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnSaveCSV.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCSV.Image")));
+            this.btnSaveCSV.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveCSV.Name = "btnSaveCSV";
+            this.btnSaveCSV.Size = new System.Drawing.Size(59, 22);
+            this.btnSaveCSV.Text = "Save CSV";
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(61, 22);
+            this.toolStripButton2.Text = "Load CSV";
+            this.toolStripButton2.ToolTipText = "btnSaveCSV";
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
+            // 
+            // gridCSV
+            // 
+            this.gridCSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridCSV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridCSV.Location = new System.Drawing.Point(0, 25);
+            this.gridCSV.Name = "gridCSV";
+            this.gridCSV.Size = new System.Drawing.Size(868, 567);
+            this.gridCSV.TabIndex = 2;
             // 
             // mainForm
             // 
-            this.ClientSize = new System.Drawing.Size(501, 227);
-            this.Controls.Add(this.btnAbrir);
-            this.Controls.Add(this.lblFilePath);
-            this.Controls.Add(this.btnODFcsv);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.ClientSize = new System.Drawing.Size(868, 614);
+            this.Controls.Add(this.gridCSV);
+            this.Controls.Add(this.stripMenu);
+            this.Controls.Add(this.sttsBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.sttsBar.ResumeLayout(false);
+            this.sttsBar.PerformLayout();
+            this.stripMenu.ResumeLayout(false);
+            this.stripMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridCSV)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
-        private System.Windows.Forms.Button btnAbrir;
-
-        private System.Windows.Forms.Button btnODFcsv;
-        private System.Windows.Forms.Label lblFilePath;
 
         private System.Windows.Forms.OpenFileDialog ofdCSV;
-        private void btnODFcsv_Click(object sender, EventArgs e) {
-            if(this.ofdCSV.ShowDialog() == DialogResult.OK) {
+        private void toolStripButton2_Click(object sender, EventArgs e) {
+            if (this.ofdCSV.ShowDialog() == DialogResult.OK) {
                 this._file = new FileStream(this.ofdCSV.FileName, FileMode.Open, FileAccess.Read, FileShare.None);
-                this.lblFilePath.Text = "Path: " + this._file.Name;
-            }
-        }
+                this.lblPath.Text  = "Path: " + this._file.Name;
 
-        private void btnAbrir_Click_1(object sender, EventArgs e) {
-            if (this._file != null) {
-                this.csvFRM = new data_csv(this._file);
-                this.csvFRM.Show();
+                this.gridCSV.DataSource = (new file_handler().file_to_table(this._file));
             }
-            else
-                MessageBox.Show("No hay archivo seleccionado", "Error file path", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }
