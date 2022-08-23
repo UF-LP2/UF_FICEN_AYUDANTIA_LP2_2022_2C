@@ -1,7 +1,19 @@
-﻿namespace PercolationRecursivo
-{
-    partial class Form1
-    {
+﻿namespace PercolationRecursivo {
+    partial class Percolation {
+        #region 
+        private SplitContainer splitContainer1;
+        private Button BPercolar;
+        private Button BGMatriz;
+        private PictureBox picPercolation;
+        private NumericUpDown NUDTam;
+        private Label label2;
+        private TrackBar TBProbabilidad;
+        private Label label1;
+        private StatusStrip statusBar;
+        private ToolStripStatusLabel STLPercolacion;
+        #endregion
+
+
         /// <summary>
         ///  Required designer variable.
         /// </summary>
@@ -11,12 +23,10 @@
         ///  Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
+        protected override void Dispose(bool disposing) {
             if (disposing && (components != null))
-            {
                 components.Dispose();
-            }
+
             base.Dispose(disposing);
         }
 
@@ -26,8 +36,7 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
+        private void InitializeComponent() {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.BPercolar = new System.Windows.Forms.Button();
             this.BGMatriz = new System.Windows.Forms.Button();
@@ -35,8 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TBProbabilidad = new System.Windows.Forms.TrackBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.picPercolation = new System.Windows.Forms.PictureBox();
+            this.statusBar = new System.Windows.Forms.StatusStrip();
             this.STLPercolacion = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -44,8 +53,8 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUDTam)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBProbabilidad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPercolation)).BeginInit();
+            this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -65,9 +74,9 @@
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.pictureBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(800, 424);
-            this.splitContainer1.SplitterDistance = 148;
+            this.splitContainer1.Panel2.Controls.Add(this.picPercolation);
+            this.splitContainer1.Size = new System.Drawing.Size(946, 566);
+            this.splitContainer1.SplitterDistance = 173;
             this.splitContainer1.TabIndex = 0;
             // 
             // BPercolar
@@ -75,7 +84,7 @@
             this.BPercolar.Dock = System.Windows.Forms.DockStyle.Top;
             this.BPercolar.Location = new System.Drawing.Point(0, 121);
             this.BPercolar.Name = "BPercolar";
-            this.BPercolar.Size = new System.Drawing.Size(148, 23);
+            this.BPercolar.Size = new System.Drawing.Size(173, 23);
             this.BPercolar.TabIndex = 1;
             this.BPercolar.Text = "Percolar";
             this.BPercolar.UseVisualStyleBackColor = true;
@@ -86,7 +95,7 @@
             this.BGMatriz.Dock = System.Windows.Forms.DockStyle.Top;
             this.BGMatriz.Location = new System.Drawing.Point(0, 98);
             this.BGMatriz.Name = "BGMatriz";
-            this.BGMatriz.Size = new System.Drawing.Size(148, 23);
+            this.BGMatriz.Size = new System.Drawing.Size(173, 23);
             this.BGMatriz.TabIndex = 0;
             this.BGMatriz.Text = "Generar Matriz";
             this.BGMatriz.UseVisualStyleBackColor = true;
@@ -107,7 +116,7 @@
             0,
             0});
             this.NUDTam.Name = "NUDTam";
-            this.NUDTam.Size = new System.Drawing.Size(148, 23);
+            this.NUDTam.Size = new System.Drawing.Size(173, 23);
             this.NUDTam.TabIndex = 5;
             this.NUDTam.Value = new decimal(new int[] {
             20,
@@ -132,7 +141,7 @@
             this.TBProbabilidad.Location = new System.Drawing.Point(0, 15);
             this.TBProbabilidad.Minimum = 1;
             this.TBProbabilidad.Name = "TBProbabilidad";
-            this.TBProbabilidad.Size = new System.Drawing.Size(148, 45);
+            this.TBProbabilidad.Size = new System.Drawing.Size(173, 45);
             this.TBProbabilidad.TabIndex = 3;
             this.TBProbabilidad.Value = 6;
             // 
@@ -146,25 +155,26 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Probabilidad";
             // 
-            // pictureBox1
+            // picPercolation
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(648, 424);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox1_Paint);
+            this.picPercolation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picPercolation.Location = new System.Drawing.Point(0, 0);
+            this.picPercolation.Name = "picPercolation";
+            this.picPercolation.Size = new System.Drawing.Size(769, 566);
+            this.picPercolation.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picPercolation.TabIndex = 0;
+            this.picPercolation.TabStop = false;
+            this.picPercolation.Paint += new System.Windows.Forms.PaintEventHandler(this.picPercolation_Paint);
             // 
-            // statusStrip1
+            // statusBar
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.STLPercolacion});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 424);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(800, 26);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusBar.Location = new System.Drawing.Point(0, 566);
+            this.statusBar.Name = "statusBar";
+            this.statusBar.Size = new System.Drawing.Size(946, 26);
+            this.statusBar.TabIndex = 7;
+            this.statusBar.Text = "Barra de Estado";
             // 
             // STLPercolacion
             // 
@@ -173,41 +183,31 @@
             this.STLPercolacion.Size = new System.Drawing.Size(74, 21);
             this.STLPercolacion.Text = "                ";
             // 
-            // Form1
+            // Percolation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(946, 592);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.statusStrip1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.statusBar);
+            this.Name = "Percolation";
+            this.Text = "Percolacion Recursiva";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
+            this.splitContainer1.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.NUDTam)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TBProbabilidad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picPercolation)).EndInit();
+            this.statusBar.ResumeLayout(false);
+            this.statusBar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private SplitContainer splitContainer1;
-        private Button BPercolar;
-        private Button BGMatriz;
-        private PictureBox pictureBox1;
-        private NumericUpDown NUDTam;
-        private Label label2;
-        private TrackBar TBProbabilidad;
-        private Label label1;
-        private StatusStrip statusStrip1;
-        private ToolStripStatusLabel STLPercolacion;
     }
 }
