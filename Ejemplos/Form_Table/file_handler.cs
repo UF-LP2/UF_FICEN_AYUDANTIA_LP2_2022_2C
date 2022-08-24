@@ -2,6 +2,8 @@
 using System.IO;
 using System;
 using System.Windows.Forms;
+using System.Text;
+
 public class file_handler {
     public BindingSource file_to_table(FileStream _file) {
 
@@ -95,5 +97,28 @@ public class file_handler {
         bindSrc.DataSource = dt;
 
         return bindSrc;
+    }
+    public void table_to_file(string _file, DataGridView grid_) {
+
+        try {
+            string col_names = "";
+            string[] out_csv = new string[grid_.Rows.Count + 1];
+            
+            for (int i = 0; i < grid_.Columns.Count; i++)
+                col_names += grid_.Columns[i].HeaderText.ToString() + ",";
+
+            out_csv[0] += col_names;
+
+            for(int i = 1; i < grid_.Rows.Count - 1; i++) {
+                for (int j = 0; j < grid_.Columns.Count - 1; j++) {
+                    out_csv[i] += grid_.Rows[i].Cells[j].Value.ToString() + ",";
+                }
+            }
+            File.WriteAllLines(_file, out_csv, Encoding.UTF8);
+        }
+        catch(Exception ex) {
+            MessageBox.Show("Error :" + ex.Message);
+        }
+  
     }
 }

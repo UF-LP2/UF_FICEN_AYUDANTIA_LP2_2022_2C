@@ -4,7 +4,6 @@ using System.Windows.Forms;
 
 namespace Demo_Form {
     public partial class mainForm : Form {
-        private FileStream _file = null;
         public mainForm() {
             InitializeComponent();
         }
@@ -29,22 +28,22 @@ namespace Demo_Form {
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.ofdCSV = new System.Windows.Forms.OpenFileDialog();
+            this.openFileCSV = new System.Windows.Forms.OpenFileDialog();
             this.sttsBar = new System.Windows.Forms.StatusStrip();
             this.lblPath = new System.Windows.Forms.ToolStripStatusLabel();
             this.stripMenu = new System.Windows.Forms.ToolStrip();
-            this.btnSaveCSV = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.btnSaveCSV = new System.Windows.Forms.ToolStripButton();
             this.gridCSV = new System.Windows.Forms.DataGridView();
+            this.saveFileCSV = new System.Windows.Forms.SaveFileDialog();
             this.sttsBar.SuspendLayout();
             this.stripMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridCSV)).BeginInit();
             this.SuspendLayout();
             // 
-            // ofdCSV
+            // openFileCSV
             // 
-            this.ofdCSV.FileName = "ofdCSV";
-            this.ofdCSV.Filter = "\"csv files (*.csv)|*.csv|All files (*.*)|*.*\"";
+            this.openFileCSV.Filter = "\"csv files (*.csv)|*.csv|All files (*.*)|*.*\"";
             // 
             // sttsBar
             // 
@@ -74,15 +73,6 @@ namespace Demo_Form {
             this.stripMenu.TabIndex = 1;
             this.stripMenu.Text = "toolStrip1";
             // 
-            // btnSaveCSV
-            // 
-            this.btnSaveCSV.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.btnSaveCSV.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCSV.Image")));
-            this.btnSaveCSV.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnSaveCSV.Name = "btnSaveCSV";
-            this.btnSaveCSV.Size = new System.Drawing.Size(59, 22);
-            this.btnSaveCSV.Text = "Save CSV";
-            // 
             // toolStripButton2
             // 
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -94,6 +84,16 @@ namespace Demo_Form {
             this.toolStripButton2.ToolTipText = "btnSaveCSV";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
+            // btnSaveCSV
+            // 
+            this.btnSaveCSV.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.btnSaveCSV.Image = ((System.Drawing.Image)(resources.GetObject("btnSaveCSV.Image")));
+            this.btnSaveCSV.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnSaveCSV.Name = "btnSaveCSV";
+            this.btnSaveCSV.Size = new System.Drawing.Size(59, 22);
+            this.btnSaveCSV.Text = "Save CSV";
+            this.btnSaveCSV.Click += new System.EventHandler(this.btnSaveCSV_Click);
+            // 
             // gridCSV
             // 
             this.gridCSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -102,6 +102,10 @@ namespace Demo_Form {
             this.gridCSV.Name = "gridCSV";
             this.gridCSV.Size = new System.Drawing.Size(868, 567);
             this.gridCSV.TabIndex = 2;
+            // 
+            // saveFileCSV
+            // 
+            this.saveFileCSV.Filter = "\"csv files (*.csv)|*.csv|All files (*.*)|*.*\"";
             // 
             // mainForm
             // 
@@ -122,13 +126,36 @@ namespace Demo_Form {
 
         }
 
-        private System.Windows.Forms.OpenFileDialog ofdCSV;
+        private System.Windows.Forms.OpenFileDialog openFileCSV;
         private void toolStripButton2_Click(object sender, EventArgs e) {
-            if (this.ofdCSV.ShowDialog() == DialogResult.OK) {
-                this._file = new FileStream(this.ofdCSV.FileName, FileMode.Open, FileAccess.Read, FileShare.None);
-                this.lblPath.Text  = "Path: " + this._file.Name;
+            if (this.openFileCSV.ShowDialog() == DialogResult.OK) {
+                FileStream _file = null;
+                _file = new FileStream(this.openFileCSV.FileName, FileMode.Open, FileAccess.Read, FileShare.None);
+                this.lblPath.Text  = "Path: " + _file.Name;
 
-                this.gridCSV.DataSource = (new file_handler().file_to_table(this._file));
+                this.gridCSV.DataSource = (new file_handler().file_to_table(_file));
+                _file.Close();
+            }
+        }
+        private void btnSaveCSV_Click(object sender, EventArgs e) {
+            if(this.gridCSV.Rows.Count > 0) {
+                FileStream _file = null;
+                bool file_err = true;
+
+                if(this.saveFileCSV.ShowDialog() == DialogResult.OK && File.Exists(this.saveFileCSV.FileName)) {
+                    try {
+                        File.Delete(this.saveFileCSV.FileName);
+                    }
+                    catch (IOException ex) {
+                        file_err = false;
+                        MessageBox.Show("It wasn't possible to write the data to the disk." + ex.Message);
+                    }
+                    _file = new FileStream(this.saveFileCSV.FileName, FileMode.CreateNew, FileAccess.Write, FileShare.None);
+                }
+                if (file_err)
+                    new file_handler().table_to_file(saveFileCSV.FileName, this.gridCSV);
+            } else {
+                MessageBox.Show("There's no records", "No records", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
     }

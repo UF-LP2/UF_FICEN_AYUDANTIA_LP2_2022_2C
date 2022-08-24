@@ -25,5 +25,6 @@ namespace Demo_Form {
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.ToolStripButton btnSaveCSV;
         private System.Windows.Forms.DataGridView gridCSV;
+        private System.Windows.Forms.SaveFileDialog saveFileCSV;
     }
 }
