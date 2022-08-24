@@ -129,7 +129,7 @@ namespace PercolationRecursivo {
                     else if (matriz[j, i] == 1)
                         gr.FillRectangle(Brushes.Black, i * tamSize + 1, j * tamSize + 1, tamSize - 1, tamSize - 1);
                     else if (matriz[j, i] == 2)
-                        gr.FillRectangle(Brushes.Aqua, i * tamSize + 1, j * tamSize + 1, tamSize - 1, tamSize - 1);
+                        gr.FillRectangle(Brushes.Red, i * tamSize + 1, j * tamSize + 1, tamSize - 1, tamSize - 1);
                     
                 }
             }
