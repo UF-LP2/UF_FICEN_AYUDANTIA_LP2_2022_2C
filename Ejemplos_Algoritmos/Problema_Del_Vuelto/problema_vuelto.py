@@ -1,9 +1,9 @@
-Monedas_Para_Vuelto: list[float] = [ 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25 ]
+import sys
 
-def main():
-    vuelto_: float = float(input("Vuelto a devolver => "))
+Monedas_Para_Vuelto: list[float] = [ 1, 2, 5, 10, 25, 50, 100, 200, 500, 1000 ]
 
-    monedas: dict[str, int] = vuelto(vuelto_)
+def main(input_change: int):
+    monedas: dict[str, int] = vuelto(input_change)
     imprimir_cambio(monedas)
 
 def vuelto(A_Devolver: float) -> dict[str, int]:
@@ -38,4 +38,4 @@ def imprimir_cambio(Cambios: dict[str, int]) -> None:
     print(f"Se requiero {cantidad_monedas} de monedas")
 
 if __name__ == "__main__":
-    main()
+    main(int(sys.argv[1]))

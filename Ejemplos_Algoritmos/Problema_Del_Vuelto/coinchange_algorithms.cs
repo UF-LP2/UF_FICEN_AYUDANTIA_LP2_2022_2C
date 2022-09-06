@@ -1,5 +1,3 @@
-
-
 namespace Algorithms {
     // G: Greedy
     public class CoinChangeG {
