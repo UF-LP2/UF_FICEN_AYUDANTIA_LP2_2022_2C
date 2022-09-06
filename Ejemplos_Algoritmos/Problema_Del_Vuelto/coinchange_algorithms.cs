@@ -56,14 +56,14 @@ namespace Algorithms {
         public void print_dictionary() {
 
             int count_coins = 0;
-            Console.WriteLine( "Vuelto:" );
+            Console.Write( "Vuelto: " );
 
             foreach ( KeyValuePair<int, int> Coin_ in Change_G ) {
-                Console.WriteLine( "$" + Coin_.Key + " [" + Coin_.Value + "]" );
+                Console.Write( "$" + Coin_.Key + " [" + Coin_.Value + "]" );
                 count_coins += Coin_.Value;
             }
 
-            Console.WriteLine( "Cantidad total de monedas: " + count_coins );
+            Console.Write( " >>> Cantidad total de monedas: " + count_coins );
         }
     }
 
