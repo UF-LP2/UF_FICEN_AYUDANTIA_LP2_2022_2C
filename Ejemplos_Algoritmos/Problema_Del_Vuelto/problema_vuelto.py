@@ -16,19 +16,21 @@ def vuelto(A_Devolver: float) -> dict[str, int]:
             try:
                 monedas[str(ret_moneda)] += 1
             except KeyError:
-                monedas.update({ str(ret_moneda): 1 })
+                monedas.update( { str(ret_moneda): 1 } )
+
     return monedas
 
+## Buscamos la minima cantidad de monedas (menor cantidad, mayor valor)
 def buscar_moneda(Cambio: int) -> int:
     i: int = 0
+
+    Monedas_Para_Vuelto.reverse()
 
     while True:
         if Cambio >= Monedas_Para_Vuelto[i]:
             return Monedas_Para_Vuelto[i]
 
         i += 1
-
-    return None
 
 def imprimir_cambio(Cambios: dict[str, int]) -> None:
     cantidad_monedas: int = 0

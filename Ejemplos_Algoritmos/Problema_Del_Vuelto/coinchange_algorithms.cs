@@ -4,6 +4,7 @@ namespace Algorithms {
         Dictionary<int, int> Change_G;
         int[] Coins;
         public CoinChangeG( int Sum, int[] Coins ) {
+            
             this.Coins = Coins;
 
             // Inicializamos el Diccionario
@@ -11,23 +12,41 @@ namespace Algorithms {
 
             // Arrancamos el proceso obtener el vuelto
             this.greedy_method( Sum );
+            
         }
 
         // Método Greedy para que obtiene las monedas del vuelto
+        // Busca el menor número de monedas
         private void greedy_method( int Sum ) {
+
             if( Sum <= 0 )
                 return;
-            
-            int Coin_ = Change_finder( Sum, 0 );
+
+            int Coin_ = Change_finder( Sum, Coins.Length - 1 );
             if ( Coin_ != 0 ) {
 
                 this.check_dictionary(Coin_);
                 Sum -= Coin_;
 
             }
+
             greedy_method(Sum);
         }
 
+        // Buscar de forma recursiva la moneda
+        private int Change_finder( int Value, int position ) {
+
+            if( position < 0 )
+                return 0;
+
+            if ( Value >= Coins[position] ) 
+                return Coins[position];
+
+            return Change_finder( Value, position - 1 );
+
+        }
+
+        #region IGNORAR
         // Verifica si el key se encuentra o no dentro del diccionario, de no estar lo agrega
         private void check_dictionary( int Coin_ ) {
 
@@ -35,19 +54,9 @@ namespace Algorithms {
                 this.Change_G[Coin_]++;
                 return;
             }
+
             this.Change_G.Add( Coin_, 1 );
 
-        }
-
-        // Buscar de forma recursiva la moneda
-        private int Change_finder( int Value, int position ) {
-            if( ( position + 1 ) == Coins.Length )
-                return 0;
-
-            if ( Value >= Coins[position] ) 
-                return Coins[position];
-            
-            return Change_finder( Value, position + 1 ); 
         }
 
         //
@@ -63,6 +72,8 @@ namespace Algorithms {
 
             Console.Write( " >>> Cantidad total de monedas: " + count_coins );
         }
+        #endregion
+
     }
 
     // DP: Dynamic Programming
@@ -104,6 +115,7 @@ namespace Algorithms {
             return this.methodDP( CoinChange_, n_ - 1, Sum_, Change_, ctrl_ ) + this.methodDP( CoinChange_, n_, Sum_ - CoinChange_[n_ - 1], Change_, ctrl_ ); 
         }
 
+        #region IGNORAR
         // Crea un sub array basado en el array original
         private int[] SubArray(int[] array_, int index_, int length_ ) {
 
@@ -167,5 +179,7 @@ namespace Algorithms {
             }
 
         }
+        #endregion
+
     }
 }
