@@ -29,14 +29,17 @@ partial class formAlgorithms
     private void InitializeComponent()
     {
             this.split_Conenedor = new System.Windows.Forms.SplitContainer();
+            this.btnRUN = new System.Windows.Forms.Button();
             this.lbl_Input = new System.Windows.Forms.Label();
-            this.btnRun = new System.Windows.Forms.Button();
             this.txtChange = new System.Windows.Forms.TextBox();
             this.lblAlgo = new System.Windows.Forms.Label();
             this.radiodynamicProg = new System.Windows.Forms.RadioButton();
             this.radioGreedy = new System.Windows.Forms.RadioButton();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.split_Conenedor)).BeginInit();
             this.split_Conenedor.Panel1.SuspendLayout();
+            this.split_Conenedor.Panel2.SuspendLayout();
             this.split_Conenedor.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,15 +51,29 @@ partial class formAlgorithms
             // 
             // split_Conenedor.Panel1
             // 
+            this.split_Conenedor.Panel1.Controls.Add(this.btnRUN);
             this.split_Conenedor.Panel1.Controls.Add(this.lbl_Input);
-            this.split_Conenedor.Panel1.Controls.Add(this.btnRun);
             this.split_Conenedor.Panel1.Controls.Add(this.txtChange);
             this.split_Conenedor.Panel1.Controls.Add(this.lblAlgo);
             this.split_Conenedor.Panel1.Controls.Add(this.radiodynamicProg);
             this.split_Conenedor.Panel1.Controls.Add(this.radioGreedy);
+            // 
+            // split_Conenedor.Panel2
+            // 
+            this.split_Conenedor.Panel2.Controls.Add(this.treeView1);
             this.split_Conenedor.Size = new System.Drawing.Size(743, 390);
             this.split_Conenedor.SplitterDistance = 247;
             this.split_Conenedor.TabIndex = 0;
+            // 
+            // btnRUN
+            // 
+            this.btnRUN.Location = new System.Drawing.Point(89, 255);
+            this.btnRUN.Name = "btnRUN";
+            this.btnRUN.Size = new System.Drawing.Size(75, 50);
+            this.btnRUN.TabIndex = 11;
+            this.btnRUN.Text = "Correr";
+            this.btnRUN.UseVisualStyleBackColor = true;
+            this.btnRUN.Click += new System.EventHandler(this.btnRUN_Click);
             // 
             // lbl_Input
             // 
@@ -66,15 +83,6 @@ partial class formAlgorithms
             this.lbl_Input.Size = new System.Drawing.Size(44, 15);
             this.lbl_Input.TabIndex = 10;
             this.lbl_Input.Text = "Vuelto:";
-            // 
-            // btnRun
-            // 
-            this.btnRun.Location = new System.Drawing.Point(89, 252);
-            this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 45);
-            this.btnRun.TabIndex = 9;
-            this.btnRun.Text = "Correr";
-            this.btnRun.UseVisualStyleBackColor = true;
             // 
             // txtChange
             // 
@@ -114,6 +122,15 @@ partial class formAlgorithms
             this.radioGreedy.Text = "Voráz";
             this.radioGreedy.UseVisualStyleBackColor = true;
             // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(492, 390);
+            this.treeView1.TabIndex = 0;
+            // 
             // formAlgorithms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -124,8 +141,10 @@ partial class formAlgorithms
             this.MinimumSize = new System.Drawing.Size(759, 429);
             this.Name = "formAlgorithms";
             this.Text = "Selector de Algoritmo";
+            this.Load += new System.EventHandler(this.formAlgorithms_Load);
             this.split_Conenedor.Panel1.ResumeLayout(false);
             this.split_Conenedor.Panel1.PerformLayout();
+            this.split_Conenedor.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.split_Conenedor)).EndInit();
             this.split_Conenedor.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -136,9 +155,11 @@ partial class formAlgorithms
 
     private SplitContainer split_Conenedor;
     private Label lbl_Input;
-    private Button btnRun;
     private TextBox txtChange;
     private Label lblAlgo;
     private RadioButton radiodynamicProg;
     private RadioButton radioGreedy;
+    private System.ComponentModel.BackgroundWorker backgroundWorker1;
+    private Button btnRUN;
+    private TreeView treeView1;
 }
