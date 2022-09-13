@@ -1,4 +1,4 @@
-#### [Volver](https://github.com/eastanganelli/UF_FICEN_AYUDANTIA_IRI_2022_2C/tree/main)
+#### [Volver](https://github.com/UF-LP2/UF_FICEN_AYUDANTIA_LP2_2022_2C)
 ---
 # Ejemplos
 
