@@ -11,4 +11,5 @@
 
 ### EJEMPLOS
 [Códigos de Ejemplo](https://github.com/UF-LP2/UF_FICEN_AYUDANTIA_LP2_2022_2C/tree/Ejemplos)
- - ...
+ - [Ejemplos Algoritmos](https://github.com/UF-LP2/UF_FICEN_AYUDANTIA_LP2_2022_2C/tree/Ejemplos/Ejemplos_Algoritmos)
+ - [Ejemplos WinForms](https://github.com/UF-LP2/UF_FICEN_AYUDANTIA_LP2_2022_2C/tree/Ejemplos/Ejemplos_WinForms)
