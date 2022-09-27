@@ -1,0 +1,17 @@
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\bin\Debug\net6.0-windows\Ejemplo_Listas.exe
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\bin\Debug\net6.0-windows\Ejemplo_Listas.deps.json
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\bin\Debug\net6.0-windows\Ejemplo_Listas.runtimeconfig.json
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\bin\Debug\net6.0-windows\Ejemplo_Listas.dll
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\bin\Debug\net6.0-windows\Ejemplo_Listas.pdb
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.csproj.AssemblyReference.cache
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.Form1.resources
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.csproj.GenerateResource.cache
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.AssemblyInfoInputs.cache
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.AssemblyInfo.cs
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.csproj.CoreCompileInputs.cache
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.dll
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\refint\Ejemplo_Listas.dll
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.pdb
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\Ejemplo_Listas.genruntimeconfig.cache
+C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Listas\obj\Debug\net6.0-windows\ref\Ejemplo_Listas.dll
