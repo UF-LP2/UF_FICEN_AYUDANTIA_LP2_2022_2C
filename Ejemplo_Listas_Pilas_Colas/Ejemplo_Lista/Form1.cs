@@ -18,7 +18,7 @@ namespace Ejemplo_Lista
                 if (lista.Count == 0)
                     pos = 0;
                 else if(lista.Count < pos)
-                    pos = lista.Count-1;
+                    pos = lista.Count;
 
                 lista.Insert(pos, Int32.Parse(value));
                 listBox1.Items.Insert(pos, value);
@@ -122,7 +122,7 @@ namespace Ejemplo_Lista
                     if (lista.Count <= pos)
                         pos = lista.Count - 1;
 
-                    label1.Text = "Valor de Dequeue: " + lista[pos];
+                    label1.Text = "Dato removido: " + lista[pos];
                     lista.RemoveAt(pos);
                     listBox1.Items.RemoveAt(pos);
                 }
@@ -132,6 +132,9 @@ namespace Ejemplo_Lista
         private void OrdenarButton_Click(object sender, EventArgs e)
         {
             lista.Sort();
-            listBox1.DataSource = lista;        }
+            listBox1.Items.Clear();
+            foreach(int a in lista)
+                listBox1.Items.Add(a);
+        }
     }
 }
