@@ -9,16 +9,6 @@ namespace Ejemplo_Pila
             InitializeComponent();
         }
 
-        private void PushButton_Click(object sender, EventArgs e)
-        {
-            string value = "";
-            if (InputBox("Dialog Box", "Ingrese un dato", ref value) == DialogResult.OK)
-            {
-                pila.Push(Int32.Parse(value));
-                listBox1.Items.Insert(0, value);
-            }
-        }
-
         public static DialogResult InputBox(string title, string promptText, ref string value)
         {
             Form form = new Form();
@@ -55,6 +45,16 @@ namespace Ejemplo_Pila
 
             value = textBox.Text;
             return dialogResult;
+        }
+
+        private void PushButton_Click(object sender, EventArgs e)
+        {
+            string value = "";
+            if (InputBox("Dialog Box", "Ingrese un dato", ref value) == DialogResult.OK)
+            {
+                pila.Push(Int32.Parse(value));
+                listBox1.Items.Insert(0, value);
+            }
         }
 
         private void PopButton_Click(object sender, EventArgs e)

@@ -12,16 +12,6 @@ namespace Ejemplo_Cola
             InitializeComponent();
         }
 
-        //Enqueue Button
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string value = "";
-            if (InputBox("Dialog Box", "Ingrese un dato", ref value) == DialogResult.OK)
-            {
-                cola.Enqueue(Int32.Parse(value));
-                listBox1.Items.Add(value);
-            }
-        }
         public static DialogResult InputBox(string title, string promptText, ref string value)
         {
             Form form = new Form();
@@ -58,6 +48,17 @@ namespace Ejemplo_Cola
 
             value = textBox.Text;
             return dialogResult;
+        }
+
+        //Enqueue Button
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string value = "";
+            if (InputBox("Dialog Box", "Ingrese un dato", ref value) == DialogResult.OK)
+            {
+                cola.Enqueue(Int32.Parse(value));
+                listBox1.Items.Add(value);
+            }
         }
 
         //Dequeue Button

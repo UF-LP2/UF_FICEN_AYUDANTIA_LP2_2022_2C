@@ -8,19 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fcamp\\.nuget\\packages\\": {}
+    "C:\\Users\\Aula.UF\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fcamp\\OneDrive\\Documentos\\!Facultad - UF\\!Ayudantia\\LPII\\Ejemplos\\PilasListasColas\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\Ejemplo_Cola.csproj",
+      "projectUniqueName": "C:\\Users\\Aula.UF\\Documents\\Ejemplos_LPII\\UF_FICEN_AYUDANTIA_LP2_2022_2C\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\Ejemplo_Cola.csproj",
       "projectName": "Ejemplo_Cola",
-      "projectPath": "C:\\Users\\fcamp\\OneDrive\\Documentos\\!Facultad - UF\\!Ayudantia\\LPII\\Ejemplos\\PilasListasColas\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\Ejemplo_Cola.csproj",
-      "packagesPath": "C:\\Users\\fcamp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fcamp\\OneDrive\\Documentos\\!Facultad - UF\\!Ayudantia\\LPII\\Ejemplos\\PilasListasColas\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\obj\\",
+      "projectPath": "C:\\Users\\Aula.UF\\Documents\\Ejemplos_LPII\\UF_FICEN_AYUDANTIA_LP2_2022_2C\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\Ejemplo_Cola.csproj",
+      "packagesPath": "C:\\Users\\Aula.UF\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aula.UF\\Documents\\Ejemplos_LPII\\UF_FICEN_AYUDANTIA_LP2_2022_2C\\Ejemplo_Listas_Pilas_Colas\\Ejemplo_Cola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fcamp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aula.UF\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

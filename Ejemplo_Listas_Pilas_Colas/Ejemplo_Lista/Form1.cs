@@ -9,22 +9,6 @@ namespace Ejemplo_Lista
             InitializeComponent();
         }
 
-        private void InsertarButton_Click(object sender, EventArgs e)
-        {
-            string value = "";
-            int pos = 0;
-            if (InputBox("Dialog Box", "Ingrese un dato", ref value, ref pos) == DialogResult.OK)
-            {
-                if (lista.Count == 0)
-                    pos = 0;
-                else if(lista.Count < pos)
-                    pos = lista.Count;
-
-                lista.Insert(pos, Int32.Parse(value));
-                listBox1.Items.Insert(pos, value);
-            }
-        }
-
         public static DialogResult InputBox(string title, string promptText, ref string value, ref int pos)
         {
             Form form = new Form();
@@ -108,6 +92,22 @@ namespace Ejemplo_Lista
             pos = Convert.ToInt32(nud.Value);
 
             return dialogResult;
+        }
+
+        private void InsertarButton_Click(object sender, EventArgs e)
+        {
+            string value = "";
+            int pos = 0;
+            if (InputBox("Dialog Box", "Ingrese un dato", ref value, ref pos) == DialogResult.OK)
+            {
+                if (lista.Count == 0)
+                    pos = 0;
+                else if(lista.Count < pos)
+                    pos = lista.Count;
+
+                lista.Insert(pos, Int32.Parse(value));
+                listBox1.Items.Insert(pos, value);
+            }
         }
 
         private void QuitarButton_Click(object sender, EventArgs e)

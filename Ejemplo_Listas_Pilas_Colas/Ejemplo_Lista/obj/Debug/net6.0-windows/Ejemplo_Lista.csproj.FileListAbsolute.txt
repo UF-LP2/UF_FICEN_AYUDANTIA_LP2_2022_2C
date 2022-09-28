@@ -15,3 +15,20 @@ C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\Pilas
 C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.pdb
 C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.genruntimeconfig.cache
 C:\Users\fcamp\OneDrive\Documentos\!Facultad - UF\!Ayudantia\LPII\Ejemplos\PilasListasColas\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\ref\Ejemplo_Lista.dll
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\bin\Debug\net6.0-windows\Ejemplo_Lista.exe
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\bin\Debug\net6.0-windows\Ejemplo_Lista.deps.json
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\bin\Debug\net6.0-windows\Ejemplo_Lista.runtimeconfig.json
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\bin\Debug\net6.0-windows\Ejemplo_Lista.dll
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\bin\Debug\net6.0-windows\Ejemplo_Lista.pdb
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.csproj.AssemblyReference.cache
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.Form1.resources
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.csproj.GenerateResource.cache
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.AssemblyInfoInputs.cache
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.AssemblyInfo.cs
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.csproj.CoreCompileInputs.cache
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.dll
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\refint\Ejemplo_Lista.dll
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.pdb
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\Ejemplo_Lista.genruntimeconfig.cache
+C:\Users\Aula.UF\Documents\Ejemplos_LPII\UF_FICEN_AYUDANTIA_LP2_2022_2C\Ejemplo_Listas_Pilas_Colas\Ejemplo_Lista\obj\Debug\net6.0-windows\ref\Ejemplo_Lista.dll

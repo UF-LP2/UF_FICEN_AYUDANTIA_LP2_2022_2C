@@ -12,7 +12,7 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\fcamp\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Aula.UF\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\fcamp\\.nuget\\packages"
     ],
     "configProperties": {
